@@ -8,9 +8,9 @@ development: &defaults
   password: 
 
 test:
-  <<: *default
+  <<: *defaults
   database: APP_NAME_test
 
 production:
-  <<: *default
+  <<: *defaults
   database: APP_NAME_production
