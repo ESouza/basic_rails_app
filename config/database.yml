@@ -1,16 +1,16 @@
 development: &defaults
   adapter: postgresql
   encoding: unicode
-  database: APP_NAME_development
+  database: ENV['APP_NAME'] + "_development" 
   pool: 5
   host: localhost
-  username: YOUR_USERNAME 
+  username: ENV['PG_USER_DEV'] 
   password: 
 
 test:
   <<: *defaults
-  database: APP_NAME_test
+  database: ENV['APP_NAME'] + "_test" 
 
 production:
   <<: *defaults
-  database: APP_NAME_production
+  database: ENV['APP_NAME'] + "_production" 
