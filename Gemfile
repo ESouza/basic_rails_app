@@ -13,6 +13,7 @@ group :development do
   gem 'spring'
   gem 'pry'
   gem 'pry-rails'
+  gem 'dotenv-rails'
 end
 
 group :test do
